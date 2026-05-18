@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchLoop — Account Deletion</title>
+  <style>
+    :root { --bg:#000; --surface:#0a0a0a; --text:#fff; --muted:#888; --border:#1f1f1f; --danger:#ef4444; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; padding:48px 24px; }
+    .container { max-width:720px; margin:0 auto; }
+    header { padding-bottom:32px; border-bottom:1px solid var(--border); margin-bottom:32px; }
+    h1 { font-size:36px; font-weight:800; letter-spacing:-0.5px; }
+    h2 { font-size:22px; margin-top:32px; margin-bottom:12px; font-weight:700; }
+    p, li { color:#d4d4d4; font-size:16px; margin-bottom:12px; }
+    ol, ul { padding-left:24px; margin-bottom:16px; }
+    a { color:#fff; text-decoration:underline; }
+    a:hover { color:#a3a3a3; }
+    .muted { color:var(--muted); font-size:14px; }
+    .back { display:inline-block; margin-bottom:24px; color:var(--muted); text-decoration:none; }
+    .back:hover { color:#fff; }
+    .card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:20px; margin:16px 0; }
+    .warning { border-color:var(--danger); background:rgba(239,68,68,0.08); }
+    .step { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px 20px; margin:12px 0; display:flex; gap:16px; align-items:flex-start; }
+    .step-num { background:#fff; color:#000; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0; }
+    .step-content { flex:1; }
+    table { width:100%; border-collapse:collapse; margin:16px 0; }
+    th, td { padding:12px; text-align:left; border-bottom:1px solid var(--border); font-size:14px; color:#d4d4d4; }
+    th { color:#fff; font-weight:600; background:var(--surface); }
+    .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:12px; font-weight:600; }
+    .badge-red { background:rgba(239,68,68,0.15); color:#fca5a5; }
+    .badge-green { background:rgba(34,197,94,0.15); color:#86efac; }
+    footer { margin-top:64px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="./index.html" class="back">&larr; Back to Legal Center</a>
+    <header>
+      <h1>Account &amp; Data Deletion</h1>
+      <p class="muted">Last updated: February 1, 2026</p>
+    </header>
+    <main>
+      <p>You have the right to delete your LaunchLoop account and associated personal data at any time. This page explains exactly how, what gets removed, and what (if anything) we keep for legal compliance.</p>
+
+      <h2>Option 1 — Delete From Inside the App (Recommended)</h2>
+      <p>The fastest way to delete your account is directly inside the LaunchLoop app:</p>
+
+      <div class="step"><div class="step-num">1</div><div class="step-content"><strong>Open the LaunchLoop app</strong> and sign in to your account.</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-content">Tap the <strong>Profile</strong> tab in the bottom navigation.</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-content">Scroll to the bottom and tap <strong>&ldquo;Delete Account&rdquo;</strong>.</div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-content">Read the confirmation dialog carefully, then tap <strong>&ldquo;Confirm Delete&rdquo;</strong>.</div></div>
+      <div class="step"><div class="step-num">5</div><div class="step-content">You will be signed out immediately. Your account and personal data will be permanently removed from our active systems within <strong>30 days</strong>.</div></div>
+
+      <h2>Option 2 — Request Deletion by Email</h2>
+      <p>If you no longer have the app installed or cannot sign in, email us:</p>
+      <div class="card">
+        <p><strong>To:</strong> <a href="mailto:support@launchloop.app?subject=Account%20Deletion%20Request">support@launchloop.app</a></p>
+        <p><strong>Subject:</strong> Account Deletion Request</p>
+        <p><strong>Include:</strong></p>
+        <ul>
+          <li>The email address associated with your LaunchLoop account</li>
+          <li>Your username (if you remember it)</li>
+          <li>A short statement: "I request deletion of my LaunchLoop account and personal data."</li>
+        </ul>
+      </div>
+      <p>We will verify your identity (to prevent unauthorized deletions) and complete deletion within <strong>30 days</strong>. You will receive an email confirmation once complete.</p>
+
+      <h2>What Gets Deleted</h2>
+      <table>
+        <thead><tr><th>Data Type</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Email address &amp; password hash</td><td><span class="badge badge-red">Deleted</span></td></tr>
+          <tr><td>Username &amp; profile</td><td><span class="badge badge-red">Deleted</span></td></tr>
+          <tr><td>Apps you submitted</td><td><span class="badge badge-red">Deleted</span></td></tr>
+          <tr><td>Reviews &amp; ratings you posted</td><td><span class="badge badge-red">Deleted or anonymized</span></td></tr>
+          <tr><td>Credit balance &amp; activity log</td><td><span class="badge badge-red">Deleted</span></td></tr>
+          <tr><td>Referral history</td><td><span class="badge badge-red">Deleted</span></td></tr>
+          <tr><td>Device session tokens</td><td><span class="badge badge-red">Revoked &amp; deleted</span></td></tr>
+          <tr><td>Google OAuth association</td><td><span class="badge badge-red">Disconnected</span></td></tr>
+        </tbody>
+      </table>
+
+      <h2>What We May Retain (and Why)</h2>
+      <table>
+        <thead><tr><th>Data Type</th><th>Retention</th><th>Reason</th></tr></thead>
+        <tbody>
+          <tr><td>Anonymized financial transaction records</td><td><span class="badge badge-green">Up to 7 years</span></td><td>Tax / accounting compliance</td></tr>
+          <tr><td>Aggregate, non-identifying analytics</td><td><span class="badge badge-green">Indefinite</span></td><td>Service improvement</td></tr>
+          <tr><td>Records subject to legal hold</td><td><span class="badge badge-green">As required</span></td><td>Court order or regulatory request</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">After anonymization, retained records cannot be linked back to you personally.</p>
+
+      <h2>Things to Know Before You Delete</h2>
+      <div class="card warning">
+        <ul>
+          <li>Account deletion is <strong>permanent and cannot be undone</strong>.</li>
+          <li>Any unused credits in your wallet will be <strong>forfeited</strong>. Stripe purchases are non-refundable beyond Stripe's standard dispute window.</li>
+          <li>Your submitted apps will be removed from the LaunchLoop feed.</li>
+          <li>If you sign up again later with the same email, you will start with a brand-new account.</li>
+        </ul>
+      </div>
+
+      <h2>Questions?</h2>
+      <p>If you have any questions about the deletion process or your data, email <a href="mailto:support@launchloop.app">support@launchloop.app</a>. We typically respond within 48 hours.</p>
+    </main>
+    <footer>
+      &copy; 2026 LaunchLoop. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
