@@ -1,0 +1,146 @@
+Here's the full content of privacy-policy.html. Click anywhere in the code block below, press Ctrl+A (Windows) or Cmd+A (Mac) to select all, then Ctrl+C / Cmd+C to copy.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchLoop — Privacy Policy</title>
+  <style>
+    :root { --bg:#000; --surface:#0a0a0a; --text:#fff; --muted:#888; --border:#1f1f1f; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.6; padding:48px 24px; }
+    .container { max-width:720px; margin:0 auto; }
+    header { padding-bottom:32px; border-bottom:1px solid var(--border); margin-bottom:32px; }
+    h1 { font-size:36px; font-weight:800; letter-spacing:-0.5px; }
+    h2 { font-size:22px; margin-top:32px; margin-bottom:12px; font-weight:700; }
+    h3 { font-size:18px; margin-top:24px; margin-bottom:8px; font-weight:600; }
+    p, li { color:#d4d4d4; font-size:16px; margin-bottom:12px; }
+    ul { padding-left:24px; margin-bottom:16px; }
+    a { color:#fff; text-decoration:underline; }
+    a:hover { color:#a3a3a3; }
+    .muted { color:var(--muted); font-size:14px; }
+    .back { display:inline-block; margin-bottom:24px; color:var(--muted); text-decoration:none; }
+    .back:hover { color:#fff; }
+    table { width:100%; border-collapse:collapse; margin:16px 0; }
+    th, td { padding:12px; text-align:left; border-bottom:1px solid var(--border); font-size:14px; color:#d4d4d4; }
+    th { color:#fff; font-weight:600; background:var(--surface); }
+    footer { margin-top:64px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="./index.html" class="back">&larr; Back to Legal Center</a>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="muted">Last updated: February 1, 2026</p>
+    </header>
+    <main>
+      <p>This Privacy Policy describes how LaunchLoop ("we", "us", "our") collects, uses, and shares information when you use our mobile application and related services (the "Service"). By using LaunchLoop, you agree to the practices described below.</p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>1.1 Account Information</h3>
+      <ul>
+        <li><strong>Email address</strong> — required to create an account, sign in, recover access, and receive transactional notifications.</li>
+        <li><strong>Username / Display name</strong> — public identifier shown alongside your submitted apps and reviews.</li>
+        <li><strong>Password</strong> — stored only in encrypted (hashed) form using industry-standard bcrypt.</li>
+        <li><strong>Google account profile</strong> (only if you sign in with Google) — name, email, and profile picture, obtained via OAuth.</li>
+      </ul>
+
+      <h3>1.2 User-Generated Content</h3>
+      <ul>
+        <li><strong>App submissions</strong> — app name, description, link, category, screenshots.</li>
+        <li><strong>Reviews and ratings</strong> — UX rating, idea rating, and written comments about other users' apps.</li>
+        <li><strong>Referrals</strong> — referral codes shared and accepted.</li>
+      </ul>
+
+      <h3>1.3 Activity &amp; Usage Data</h3>
+      <ul>
+        <li>Credit balance and transaction history (submissions, reviews, downloads, boosts).</li>
+        <li>Apps you have tried, reviewed, or boosted.</li>
+        <li>Sign-in timestamps and device session information.</li>
+      </ul>
+
+      <h3>1.4 Payment Information</h3>
+      <p>When you purchase credits, payment is processed by <strong>Stripe, Inc.</strong> We never see or store your full card number, CVV, or expiration date. Stripe provides us only with a transaction ID, purchase amount, and payment status. See <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a>.</p>
+
+      <h3>1.5 Technical &amp; Device Data</h3>
+      <ul>
+        <li>Device type and operating system (for compatibility and bug reporting).</li>
+        <li>Anonymous app crash reports and error logs.</li>
+        <li>IP address — used transiently for security, abuse prevention, and rate-limiting. Not associated with your profile long-term.</li>
+      </ul>
+
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To create and maintain your account.</li>
+        <li>To operate core features (feed, submissions, reviews, credits, referrals, wallet).</li>
+        <li>To process credit purchases via Stripe.</li>
+        <li>To prevent fraud, spam, abuse, and unauthorized account access.</li>
+        <li>To send service-related emails (account confirmation, security alerts, deletion confirmations).</li>
+        <li>To improve the Service through aggregated, non-identifying analytics.</li>
+      </ul>
+      <p>We <strong>do not</strong> sell, rent, or trade your personal information to advertisers or data brokers.</p>
+
+      <h2>3. Third-Party Services</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr></thead>
+        <tbody>
+          <tr><td>Stripe</td><td>Payment processing</td><td>Email, transaction amount</td></tr>
+          <tr><td>Google OAuth</td><td>Sign-in</td><td>Email, name, profile picture</td></tr>
+          <tr><td>MongoDB Atlas</td><td>Encrypted database hosting</td><td>All account &amp; activity data</td></tr>
+          <tr><td>Expo / EAS</td><td>App delivery &amp; updates</td><td>Anonymous device + crash data</td></tr>
+        </tbody>
+      </table>
+
+      <h2>4. Data Sharing &amp; Public Content</h2>
+      <p>Content you choose to make public is visible to other LaunchLoop users:</p>
+      <ul>
+        <li>Your username</li>
+        <li>Apps you submit</li>
+        <li>Reviews and ratings you post</li>
+      </ul>
+      <p>Private data (email, password hash, payment history, credit balance) is <strong>never</strong> exposed to other users.</p>
+
+      <h2>5. Data Retention</h2>
+      <p>We retain your data only as long as your account is active. Once you request account deletion (see Section 7), your data is permanently removed from our active systems within <strong>30 days</strong>. Anonymized financial records may be retained for up to <strong>7 years</strong> to comply with tax and accounting laws.</p>
+
+      <h2>6. Security</h2>
+      <ul>
+        <li>All data is encrypted in transit using HTTPS/TLS.</li>
+        <li>Passwords are hashed with bcrypt — never stored in plain text.</li>
+        <li>JWT-based session tokens with strict expiration.</li>
+        <li>Servers are secured with industry-standard firewalls and access controls.</li>
+      </ul>
+      <p>No system is 100% secure. If a breach occurs, we will notify affected users within 72 hours as required by applicable laws.</p>
+
+      <h2>7. Your Rights &amp; Choices</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> a copy of your data — email us at <a href="mailto:support@launchloop.app">support@launchloop.app</a>.</li>
+        <li><strong>Correct</strong> inaccurate information via your profile settings.</li>
+        <li><strong>Delete</strong> your account — see our <a href="./account-deletion.html">Account Deletion page</a>.</li>
+        <li><strong>Opt out</strong> of non-essential email communications at any time.</li>
+        <li><strong>Withdraw consent</strong> for Google sign-in by disconnecting via your Google account settings.</li>
+      </ul>
+
+      <h2>8. Children's Privacy</h2>
+      <p>LaunchLoop is intended for users aged <strong>18 and older</strong>. We do not knowingly collect data from anyone under 18. If you believe a minor has provided us information, please email <a href="mailto:support@launchloop.app">support@launchloop.app</a> and we will delete it promptly.</p>
+
+      <h2>9. International Users</h2>
+      <p>LaunchLoop is operated from the United States. By using the Service, you consent to your data being transferred to and processed in the United States, which may have different data-protection laws than your country.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will always reflect the most recent revision. Material changes will be communicated via email or in-app notification.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>For questions, concerns, or requests regarding this Privacy Policy, contact:</p>
+      <p><strong>LaunchLoop Support</strong><br/>Email: <a href="mailto:support@launchloop.app">support@launchloop.app</a></p>
+    </main>
+    <footer>
+      &copy; 2026 LaunchLoop. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
